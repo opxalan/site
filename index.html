@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta content="ie=edge" http-equiv="x-ua-compatible">
+  <title></title>
+  <meta content="" name="description">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="site.webmanifest" rel="manifest">
+  <link href="icon.png" rel="apple-touch-icon">
+  <link href="css/main.css" rel="stylesheet">
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/animatescroll.min.js"></script>
+  <script>
+    $(document).ready(function() {
+
+      /* Highlight menu on scroll */
+      $(window).scroll(function() {
+        var position = $(this).scrollTop();
+
+        $('.content-wrapper').each(function() {
+          var target = $(this).offset().top - 100;
+          var id = $(this).attr('id');
+
+          if (position >= target) {
+            $('.categories__item').removeClass('categories__item--active');
+            $('#link-'+id).addClass('categories__item--active');
+          }
+        });
+      });
+
+      $('#menutoggle').click(function(){
+        $('.categories-wrapper').toggleClass('categories-wrapper--hidden');
+      });
+
+      $('.categories__item').click(function(){
+        $('.categories-wrapper').addClass('categories-wrapper--hidden');
+      });
+    }); 
+
+  </script>
+</head>
+<body id="top">
+  <div class="categories" id="menu">
+  <div class="menutoggle" id="menutoggle"></div>
+    <div class="categories__logo" onclick="$('#top').animatescroll({scrollSpeed:1500,easing:'easeOutCubic'});"><img alt="OPX logo" src="img/top-logo.png"></div>
+
+    <div class="categories-wrapper  categories-wrapper--hidden">
+      
+      <div class="categories__item" id="link-panel1" onclick="$('#panel1').animatescroll({scrollSpeed:1500,easing:'easeOutCubic'});">
+        <div class="categories__item__label">Our mission</div>
+      </div>
+      <div class="categories__item" id="link-panel2" onclick="$('#panel2').animatescroll({scrollSpeed:1500,easing:'easeOutCubic'});">
+        <div class="categories__item__label">Why OPX?</div>
+      </div>
+      <div class="categories__item" id="link-panel3" onclick="$('#panel3').animatescroll({scrollSpeed:1500,easing:'easeOutCubic'});">
+        <div class="categories__item__label">OPX solution</div>
+      </div>
+      <div class="categories__item" id="link-panel4" onclick="$('#panel4').animatescroll({scrollSpeed:1500,easing:'easeOutCubic'});">
+        <div class="categories__item__label">Founding shareholders</div>
+      </div>
+      <div class="categories__item">
+        <div class="categories__item__label">Log in</div>
+      </div>
+    </div>
+  </div>
+  <div class="fold  content-wrapper" id="fold">
+    <div class="particles" id="particles"></div>
+    <div class="logo-container">
+      <div class="front-logo"><img alt="OPX logo" src="img/logo2.png"></div>
+      <div class="cta">
+        <div class="cta-button">
+          pdf presentation
+        </div>
+        <div class="cta-button" onclick="$('#footer').animatescroll({scrollSpeed:1500,easing:'easeOutCubic'});">
+          Contact us
+        </div>
+      </div>
+    </div>
+  </div><!-- <div class="content">
+            <div id="wave" class="wave"></div>
+        </div> -->
+<div class="content-wrapper panel1" id="panel1">
+    <div class="content-header">
+      Our mission
+    </div>
+    <div class="content-body">
+      <div class="subheader">Philantropy is one of the most significant global flows of capital yet one of the least transparent</div>
+        <p>Oslo Philanthropic Exchange (OPX) brings the benefits of the global capital markets to philanthropy: efficient access to additional pools of capital, transparency &amp; accountability. </p>
+        <ul>
+          <li>Robust Due Diligence at Listing</li>
+          <li>Standarized Periodic Reporting</li>
+          <li>Blockchain Enabled</li>
+        </ul>
+        <div class="subheader">Oslo Philantropic Exchange one platform to filter, find, fund, and follow Philanthropy</div>
+    </div>
+  </div>
+  <div class="content-wrapper panel2" id="panel2">
+      <div class="content-header">Why OPX?</div>
+      <div class="content-body">
+        <div class="row  clear">
+        <div class="col50">
+          <div class="subheader">Today's fundraising is a suboptimal system for all stakeholders</div>
+          <div class="infographic">
+              <div class="infoitem">
+                <div class="infoitem__header">Expensive Constant Fundraising</div>
+                <div class="infoitem__text">15% to 40%+ fundraising costs</div>
+              </div>
+              <div class="infoitem">Overwhelming Constant Reporting<br>Donor dilligence, earmarking &amp; transparency requirements</div>
+              <div class="infoitem">Funding Mismatch<br>Long-term mission, no funding visibility</div>
+              <div class="infoitem">Difficulties for Donors<br>No easy way to find, track, and compare NGO's/Charities</div>
+          </div>
+          <p>Thousands of charities use third-party fund-raising firms, and their commissions can be so exorbitant—from&nbsp;<span class="emphasis">65 to 95 cents of every dollar</span> raised—that they leave very little for the nonprofits to apply to their actual work.</p>
+          <p>Third-party fund-raising is perfectly legal, and many legitimate charities use it simply because it’s cheaper than having full-time fund-raisers on staff.</p>
+        </div>
+        <div class="col50">
+          <div class="subheader">Overwhelming reporting diminishes impact</div>
+          <p>A substantial amount of documentation is submitted to donors with limited evidence that it is used.</p>
+          <p>NGOs consulted had <span class="emphasis">an average of 36 reporting deadlines per country per year. For some, this was as high as 80.</span> If ad-hoc requests are included, an NGO working in six countries estimated they would be submitting a report every 24 hours.</p>
+          <p>A significant proportion of reporting, Partner Capacity Assessment (PCA) and audit is regarded as duplicated effort that creates an inefficient use of resources. <span class="emphasis">100% of NGOs questioned agreed that their assessments could be shared between donors.</span></p>
+          <p>One international NGO calculated that it <span class="emphasis">could save 11,000 hours on financial reporting for its nine largest donors</span> if those donors agreed on cost definition and accepted the same finance template.</p>
+        </div>
+        
+          
+
+        </div>
+        <div class="quote">More of the money is going to the telemarketing firm than to the charity itself”</div>
+          <div class="author">- Sandra Miniutti, Vice President, Charity Navigator</div>
+      </div>
+  </div>
+  <div class="content-wrapper panel3" id="panel3">
+    <div class="content-header">OPX solution</div>
+      <div class="content-body">
+        <p>Our aim is to replicate the elements of the global capital markets that enable capital to flow seamlessly and efficiently on a global basis. We don’t need to re-invent the wheel. The system, for the most part, works.</p>
+        <p>With a few changes that address the specific needs of not-for-profit institutions, the same players can do the same jobs – but for philanthropy. Preparing companies for an OPX listing is not materially different from preparing companies for a listing on any of the world’s stock exchanges. Raising capital is the same – only for a different purpose and with a different story, a different return expectation. Research coverage, not marketing, but research regarding facts, comparability, impact, performance – this should also be the same.</p>
+        <p>Our aim is to enable long-term funding for long-term philanthropic missions. Unrestricted and not micromanaged. OPX have banks and broker dealers as Members, authorized to bring clients to a listing. OPX Advisors will be approved to conduct the business, legal and financial due diligence that is a requirement to any OPX listing. Only reputable institutions will gain membership into OPX either as Members or Advisors.</p>
+        <p><span class="emphasis">A professional approach to philanthropy</span> – funding that matches the mission, access to capital that rewards performance, comparability across similar charities, easy access to relevant data, continuous access to newsflow and material events, periodic access to management reporting, availability of third-party research.</p>
+      </div>
+  </div>
+  <div class="content-wrapper panel4" id="panel4">
+    <div class="content-header">
+        Founding shareholders
+      </div>
+      <div class="content-body">
+        <p>Sparebank1 Gruppen</p>
+        <p>Storebrand</p>
+        <p>TD Veen</p>
+        <p></p><!-- maybe some text here...will check.. -->
+      </div>
+  </div>
+  <div class="footer-wrapper" id="footer" onclick="$('#fold').animatescroll({scrollSpeed:1500,easing:'easeOutCubic'});">
+    <div class="content-body  footer-body  clearfix">
+      <p style="float: left">OPX - Head Office<br>
+        Hammersborgsgata 2<br>
+        0181 Oslo<br>
+        Norway<br>
+        info@opx.org</p>
+      <p style="float: right">
+       <!--
+       <div id="map" style="float:right;width:200px;height:200px">
+          <script src="https://maps.googleapis.com/maps/api/js?callback=myMap">
+          </script>
+        </div>
+        -->
+      </p>
+    </div>
+  </div>
+  <script src="js/particles.min.js"></script>
+  <script>
+particlesJS("particles", {
+  "particles": {
+    "number": {
+      "value": 100,
+      "density": {
+        "enable": true,
+        "value_area": 1000
+      }
+    },
+    "color": {
+      "value": "#ccc"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+    },
+    "opacity": {
+      "value": 0.5,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#ccc",
+      "opacity": 0.6,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 3,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": false,
+        "mode": "repulse"
+      },
+      "onclick": {
+        "enable": false,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 400,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+});
+
+  </script>
+</body>
+</html>
